@@ -1,8 +1,9 @@
-import { select, json, tree, hierarchy, linkVertical, zoom, event, zoomIdentity } from 'd3';
+import { select, tree, hierarchy, linkVertical, zoom, event, zoomIdentity } from 'd3';
 import EventEmitter from './eventemitter';
 
 export const CARD_CLICKED_EVENT = 'CardClickedEvent';
 export const DEPT_CLICK_EVENT = 'DeptClickEvent';
+export const DATA_URL = 'https://raw.githubusercontent.com/bumbeishvili/Assets/master/Projects/D3/Organization%20Chart/redesignedChartLongData.json';
 
 const defaultProps = {
   EXPAND_SYMBOL: '\uf067',
