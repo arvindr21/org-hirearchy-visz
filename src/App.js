@@ -10,7 +10,8 @@ import Search from './components/Search';
 import DepartmentWrapper from './components/DepartmentWrapper';
 
 class App extends Component {
-  constructor() {
+  constructor(props) {
+    super(props);
     this.chartObj = null;
     this.state = {
       showSearch: false,
@@ -23,7 +24,6 @@ class App extends Component {
   }
 
   componentDidMount(){
-    //let chartObj = new SampleTreeChart({treeData});
 
     json(DATA_URL).then(res => {
 

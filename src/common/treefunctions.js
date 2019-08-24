@@ -45,7 +45,7 @@ export class OrgTreeChart extends EventEmitter {
     // Set the dimensions and margins of the diagram
     // this also to be moved to options TBD
     this.margin = {top: 20, right: 20, bottom: 20, left: 20};
-    this.width = window.innerWidth - this.margin.left - this.margin.right,
+    this.width = window.innerWidth - this.margin.left - this.margin.right;
     this.height =  window.innerHeight - this.margin.top - this.margin.bottom;
 
     // backup the data
